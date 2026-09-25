@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArchiPortfolio | Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="marketplace-page">
+    <header class="site-header">
+      <div class="container nav" id="nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">A</span>
+          <span>ArchiPortfolio</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="builder.html">Builder</a>
+          <a href="marketplace.html" class="active-nav">Marketplace</a>
+          <a href="#">Resources</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn secondary">Login</a>
+          <a href="dashboard.html" class="btn primary">Dashboard</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="market-wrap">
+      <section class="container marketplace-top">
+        <div>
+          <p class="eyebrow">Marketplace</p>
+          <h1>Find design talent that fits your brief.</h1>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter active">All</button>
+          <button class="filter">Interior</button>
+          <button class="filter">Residential</button>
+          <button class="filter">Urban</button>
+          <button class="filter">Commercial</button>
+        </div>
+      </section>
+
+      <section class="container card-grid">
+        <article class="market-card">
+          <div class="market-thumb thumb-one"></div>
+          <div class="market-info">
+            <div class="market-head">
+              <div>
+                <h3>Rina Ali</h3>
+                <span>Interior designer</span>
+              </div>
+              <span class="rating">4.9</span>
+            </div>
+            <p>Specializes in warm, modern interiors for residential living and hospitality spaces.</p>
+            <div class="market-tags">
+              <span>Residential</span>
+              <span>Hospitality</span>
+            </div>
+            <button class="btn secondary small-btn">View profile</button>
+          </div>
+        </article>
+
+        <article class="market-card">
+          <div class="market-thumb thumb-two"></div>
+          <div class="market-info">
+            <div class="market-head">
+              <div>
+                <h3>Malik Oseni</h3>
+                <span>Architectural designer</span>
+              </div>
+              <span class="rating">4.8</span>
+            </div>
+            <p>Designs concept-led residential and mixed-use developments with a strong urban approach.</p>
+            <div class="market-tags">
+              <span>Urban</span>
+              <span>Residential</span>
+            </div>
+            <button class="btn secondary small-btn">View profile</button>
+          </div>
+        </article>
+
+        <article class="market-card">
+          <div class="market-thumb thumb-three"></div>
+          <div class="market-info">
+            <div class="market-head">
+              <div>
+                <h3>Lina Kadi</h3>
+                <span>Graduate architect</span>
+              </div>
+              <span class="rating">4.7</span>
+            </div>
+            <p>Focuses on sustainable residential architecture and thoughtfully detailed spaces.</p>
+            <div class="market-tags">
+              <span>Sustainable</span>
+              <span>Residential</span>
+            </div>
+            <button class="btn secondary small-btn">View profile</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

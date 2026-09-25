@@ -3,28 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArchiPortfolio | Build Your Architectural Career</title>
+    <title>ArchiPortfolio | SaaS for Architectural Talent</title>
     <meta
       name="description"
-      content="ArchiPortfolio is a portfolio builder and marketplace for students, junior architects, and designers to showcase projects, attract clients, and earn money online."
+      content="ArchiPortfolio helps architecture students, junior designers, and design professionals build portfolio websites and get hired or booked."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav" id="nav">
-        <a href="#top" class="brand" aria-label="ArchiPortfolio home">
+        <a href="index.html" class="brand">
           <span class="brand-mark">A</span>
           <span>ArchiPortfolio</span>
         </a>
 
-        <nav class="nav-links" aria-label="Main navigation">
+        <nav class="nav-links">
           <a href="#features">Features</a>
           <a href="#templates">Templates</a>
           <a href="#marketplace">Marketplace</a>
@@ -33,42 +30,41 @@
         </nav>
 
         <div class="nav-actions">
-          <a href="#pricing" class="btn secondary">Login</a>
-          <a href="#cta" class="btn primary">Start free</a>
+          <a href="login.html" class="btn secondary">Login</a>
+          <a href="dashboard.html" class="btn primary">Dashboard</a>
         </div>
 
         <button class="mobile-toggle" id="menuBtn" aria-label="Toggle menu">☰</button>
       </div>
     </header>
 
-    <main id="top">
+    <main>
       <section class="hero">
         <div class="container hero-grid">
           <div>
             <div class="eyebrow">For students + junior architects</div>
             <h1>Build a portfolio that opens doors.</h1>
             <p class="lead">
-              ArchiPortfolio helps students, junior architects, and designers create
-a stunning portfolio, showcase their work with confidence, and get discovered by clients, studios, and employers.
+              Create stunning portfolio websites, attract clients, and grow your architecture or interior design career with a platform built for emerging talent.
             </p>
 
             <div class="hero-actions">
-              <a href="#cta" class="btn primary">Start free trial</a>
-              <a href="#templates" class="btn secondary">View templates</a>
+              <a href="login.html" class="btn primary">Get started</a>
+              <a href="#templates" class="btn secondary">See templates</a>
             </div>
 
             <div class="stats">
               <div class="stat">
                 <strong>14k+</strong>
-                <span>Portfolios launched</span>
+                <span>Profiles launched</span>
               </div>
               <div class="stat">
                 <strong>92%</strong>
-                <span>More profile views</span>
+                <span>More inquiries</span>
               </div>
               <div class="stat">
                 <strong>$480k</strong>
-                <span>Marketplace revenue</span>
+                <span>Revenue generated</span>
               </div>
             </div>
           </div>
@@ -77,11 +73,11 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             <div class="visual-card">
               <div class="visual-image"></div>
               <div class="floating">
-                <div class="tiny">Portfolio performance</div>
-                <strong>+187% client inquiries</strong>
+                <div class="tiny">Portfolio growth</div>
+                <strong>+187% leads</strong>
                 <div class="mini">
                   <span><i class="dot"></i> 4.9/5 rating</span>
-                  <span><i class="dot"></i> 3x faster hiring</span>
+                  <span><i class="dot"></i> 3x bookings</span>
                 </div>
               </div>
             </div>
@@ -111,7 +107,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             <div class="eyebrow">Everything you need</div>
             <h2>One platform to build, showcase, and sell your work.</h2>
             <p>
-              Portfolio design tools, AI support, and client discovery built for architecture and interior design talent.
+              Everything needed to design a standout portfolio, manage client inquiries, and create paid opportunities.
             </p>
           </div>
 
@@ -119,25 +115,17 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             <article class="feature-card">
               <div class="icon-box">▣</div>
               <h3>Portfolio Builder</h3>
-              <p>
-                Launch a premium portfolio with elegant layouts, project stories, and responsive presentation.
-              </p>
+              <p>Build polished project pages with responsive layouts and smart modules.</p>
             </article>
-
             <article class="feature-card">
               <div class="icon-box">✦</div>
-              <h3>AI Content Help</h3>
-              <p>
-                Generate polished project descriptions, bios, and case-study summaries that feel professional.
-              </p>
+              <h3>AI Content Assistant</h3>
+              <p>Create clearer bios, project narratives, and descriptions in seconds.</p>
             </article>
-
             <article class="feature-card">
               <div class="icon-box">◎</div>
-              <h3>Marketplace Exposure</h3>
-              <p>
-                Get discovered by clients, studios, and collaborators looking for rising architectural talent.
-              </p>
+              <h3>Marketplace Access</h3>
+              <p>Get discovered by clients, studios, and collaborators looking for emerging talent.</p>
             </article>
           </div>
         </div>
@@ -147,7 +135,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
         <div class="container">
           <div class="section-head">
             <div class="eyebrow">Portfolio templates</div>
-            <h2>Designed for architecture, interiors, and urban design.</h2>
+            <h2>Built for architecture, interiors, and urban design.</h2>
           </div>
 
           <div class="showcase">
@@ -155,7 +143,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
               <div class="portfolio-preview preview-one"></div>
               <div class="portfolio-body">
                 <h3>Minimal Studio</h3>
-                <p>Perfect for residential interiors, furniture concepts, and clean visual storytelling.</p>
+                <p>Ideal for residential interiors, furniture schemes, and elegant storytelling.</p>
                 <div class="tags">
                   <span class="tag">Interior</span>
                   <span class="tag">Residential</span>
@@ -168,7 +156,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
               <div class="portfolio-preview preview-two"></div>
               <div class="portfolio-body">
                 <h3>Urban Vision</h3>
-                <p>Built for urban design, commercial architecture, and bold conceptual project presentation.</p>
+                <p>Built for urban design, commercial projects, and concept-driven architecture portfolios.</p>
                 <div class="tags">
                   <span class="tag">Urban</span>
                   <span class="tag">Commercial</span>
@@ -185,15 +173,15 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
           <div class="split">
             <div class="split-card">
               <div class="eyebrow">Built to generate income</div>
-              <h2>Turn your portfolio into projects, leads, and paid opportunities.</h2>
+              <h2>Turn your portfolio into leads, contracts, and paid projects.</h2>
               <p>
-                Get discovered by clients who need concept design, interior consultations, space planning, and junior architectural support.
+                Showcase your design process and get matched with clients seeking residential design, concept development, interior planning, and junior architectural support.
               </p>
 
               <ul class="check-list">
-                <li class="check-item"><span class="check">✓</span><span>Showcase your process and technical design thinking.</span></li>
-                <li class="check-item"><span class="check">✓</span><span>Receive direct inquiries from studios and private clients.</span></li>
-                <li class="check-item"><span class="check">✓</span><span>Offer services like concept development, design reviews, and visual storytelling.</span></li>
+                <li class="check-item"><span class="check">✓</span><span>Get discovered by studios and private clients.</span></li>
+                <li class="check-item"><span class="check">✓</span><span>Offer services like concept design, consulting, and space planning.</span></li>
+                <li class="check-item"><span class="check">✓</span><span>Manage leads and inquiries in one dashboard.</span></li>
               </ul>
             </div>
 
@@ -203,7 +191,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
                   <div class="step-no">1</div>
                   <div>
                     <strong>Create portfolio</strong>
-                    <span>Use smart templates</span>
+                    <span>Start from a template</span>
                   </div>
                 </div>
                 <span>2 min</span>
@@ -214,7 +202,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
                   <div class="step-no">2</div>
                   <div>
                     <strong>Publish profile</strong>
-                    <span>Visible in marketplace</span>
+                    <span>Visible in the marketplace</span>
                   </div>
                 </div>
                 <span>Live</span>
@@ -240,7 +228,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
           <div class="section-head">
             <div class="eyebrow">Pricing</div>
             <h2>Simple plans for ambitious designers.</h2>
-            <p>Choose a plan that matches your stage and start monetizing your portfolio faster.</p>
+            <p>Start free, then scale as your portfolio grows and your client base expands.</p>
           </div>
 
           <div class="pricing-grid">
@@ -254,34 +242,34 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
                 <li>Basic templates</li>
                 <li>Profile listing</li>
               </ul>
-              <a href="#cta" class="btn secondary">Try it free</a>
+              <a href="login.html" class="btn secondary">Try now</a>
             </article>
 
             <article class="price-card featured">
               <span class="badge">Most popular</span>
               <h3>Growth</h3>
               <div class="price">$29 <small>/ month</small></div>
-              <p>Perfect for junior architects and designers ready to attract clients.</p>
+              <p>For junior architects and designers ready to attract clients.</p>
               <ul class="plan-list">
                 <li>Unlimited projects</li>
                 <li>Premium templates</li>
-                <li>AI-generated descriptions</li>
+                <li>AI-generated copy</li>
                 <li>Marketplace priority</li>
               </ul>
-              <a href="#cta" class="btn primary">Get started</a>
+              <a href="login.html" class="btn primary">Get started</a>
             </article>
 
             <article class="price-card">
               <h3>Studio</h3>
               <div class="price">$79 <small>/ month</small></div>
-              <p>For professionals managing multiple offerings and inquiries.</p>
+              <p>For professionals managing multiple offerings and leads.</p>
               <ul class="plan-list">
                 <li>Custom branded pages</li>
-                <li>Analytics dashboard</li>
+                <li>Advanced analytics</li>
                 <li>Client inquiry tools</li>
                 <li>Commission automation</li>
               </ul>
-              <a href="#cta" class="btn secondary">Book demo</a>
+              <a href="login.html" class="btn secondary">Book demo</a>
             </article>
           </div>
         </div>
@@ -291,12 +279,12 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
         <div class="container">
           <div class="section-head">
             <div class="eyebrow">Success stories</div>
-            <h2>Students and junior designers are landing real opportunities.</h2>
+            <h2>Designers are landing better opportunities.</h2>
           </div>
 
           <div class="testimonial-grid">
             <article class="quote-card">
-              <p class="quote">“I created my portfolio in one weekend and started receiving residential design inquiries within a month.”</p>
+              <p class="quote">“I created my portfolio in one weekend and started getting design leads within a month.”</p>
               <div class="person">
                 <div class="avatar">RA</div>
                 <div>
@@ -307,7 +295,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             </article>
 
             <article class="quote-card">
-              <p class="quote">“The marketplace helped me get discovered by architecture studios looking for junior design support.”</p>
+              <p class="quote">“The marketplace helped me connect with studios seeking junior design support.”</p>
               <div class="person">
                 <div class="avatar">MO</div>
                 <div>
@@ -318,7 +306,7 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             </article>
 
             <article class="quote-card">
-              <p class="quote">“ArchiPortfolio gave my work a premium look and made my profile feel like a real studio.”</p>
+              <p class="quote">“ArchiPortfolio made my profile feel like a real studio, not just a student project.”</p>
               <div class="person">
                 <div class="avatar">LK</div>
                 <div>
@@ -337,12 +325,11 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
             <div>
               <div class="eyebrow alt">Start today</div>
               <h2>Build your portfolio. Get discovered. Earn more.</h2>
-              <p>Whether you are a student, junior architect, or emerging designer, ArchiPortfolio helps you turn creativity into opportunity.</p>
+              <p>From student portfolio to paid design opportunities, ArchiPortfolio is built to support your next step.</p>
             </div>
-
             <div class="cta-actions">
-              <a href="#pricing" class="btn primary">Start free</a>
-              <a href="#features" class="btn ghost">Explore features</a>
+              <a href="login.html" class="btn primary">Start free</a>
+              <a href="dashboard.html" class="btn ghost">Open dashboard</a>
             </div>
           </div>
         </div>
@@ -367,6 +354,6 @@ a stunning portfolio, showcase their work with confidence, and get discovered by
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

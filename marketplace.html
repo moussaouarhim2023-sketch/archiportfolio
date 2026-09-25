@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArchiPortfolio | Portfolio Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">A</span>
+            <span>ArchiPortfolio</span>
+          </a>
+        </div>
+
+        <nav class="side-nav">
+          <a href="dashboard.html" class="side-link">Overview</a>
+          <a href="builder.html" class="side-link active">Portfolio Builder</a>
+          <a href="marketplace.html" class="side-link">Marketplace</a>
+          <a href="#" class="side-link">Clients</a>
+          <a href="#" class="side-link">Invoices</a>
+          <a href="#" class="side-link">Settings</a>
+        </nav>
+
+        <div class="user-box">
+          <div class="avatar large">RA</div>
+          <div>
+            <strong>Rina Ali</strong>
+            <small>Interior designer</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="dashboard-main builder-page">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Portfolio Builder</p>
+            <h2>Design your portfolio</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="btn secondary">Preview</button>
+            <button class="btn primary">Publish</button>
+          </div>
+        </header>
+
+        <div class="builder-grid">
+          <section class="panel builder-panel">
+            <div class="panel-head">
+              <h3>Project editor</h3>
+              <button class="chip">Auto-save</button>
+            </div>
+
+            <div class="form-stack">
+              <label>
+                Project title
+                <input type="text" value="Maison Courtyard" />
+              </label>
+
+              <label>
+                Category
+                <select>
+                  <option>Residential</option>
+                  <option>Interior</option>
+                  <option>Urban</option>
+                  <option>Commercial</option>
+                </select>
+              </label>
+
+              <label>
+                Project summary
+                <textarea rows="4">A contemporary courtyard residence designed around natural light, tactile materials, and flexible family living spaces.</textarea>
+              </label>
+
+              <div class="upload-box">
+                <span>Upload cover image</span>
+                <button class="btn secondary small">Choose file</button>
+              </div>
+
+              <div class="project-layout">
+                <div class="layout-tile selected">Hero section</div>
+                <div class="layout-tile">Gallery</div>
+                <div class="layout-tile">Process</div>
+                <div class="layout-tile">Testimonial</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel preview-panel">
+            <div class="panel-head">
+              <h3>Live preview</h3>
+              <button class="chip">Desktop</button>
+            </div>
+
+            <div class="portfolio-preview-card">
+              <div class="preview-hero"></div>
+              <div class="preview-body">
+                <div class="faux-tag">Residential</div>
+                <h4>Maison Courtyard</h4>
+                <p>
+                  Designed for family living, material warmth, and a direct relationship with natural light.
+                </p>
+                <div class="preview-meta">
+                  <span>2026</span>
+                  <span>Interior concept</span>
+                  <span>Architecture</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

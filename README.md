@@ -1,29 +1,29 @@
-# ArchiPortfolio
+const nav = document.getElementById('nav');
+const menuBtn = document.getElementById('menuBtn');
 
-A modern landing page and product website for a startup helping students and junior architects build professional architectural portfolios and get discovered for paid work.
+if (menuBtn && nav) {
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}
 
-## Features
-- Portfolio-focused landing page
-- Premium architecture-inspired branding
-- Templates section
-- Marketplace and monetization positioning
-- Pricing cards
-- Responsive design for desktop and mobile
+const navLinks = document.querySelectorAll('.nav-links a');
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    if (nav) nav.classList.remove('open');
+  });
+});
 
-## Run locally
-Open `index.html` in a browser, or serve it with a simple local web server:
+const filters = document.querySelectorAll('.filter');
+filters.forEach((filter) => {
+  filter.addEventListener('click', () => {
+    filters.forEach((item) => item.classList.remove('active'));
+    filter.classList.add('active');
+  });
+});
 
-```bash
-python3 -m http.server 8000
-```
-
-Then visit:
-
-```bash
-http://localhost:8000
-```
-
-## Files
-- `index.html` — main page
-- `styles.css` — all styling
-- `script.js` — mobile menu behavior
+const authForm = document.querySelector('.auth-form');
+authForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  window.location.href = 'dashboard.html';
+});

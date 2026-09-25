@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArchiPortfolio | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">A</span>
+            <span>ArchiPortfolio</span>
+          </a>
+        </div>
+
+        <nav class="side-nav">
+          <a href="dashboard.html" class="side-link active">Overview</a>
+          <a href="builder.html" class="side-link">Portfolio Builder</a>
+          <a href="marketplace.html" class="side-link">Marketplace</a>
+          <a href="#" class="side-link">Messages</a>
+          <a href="#" class="side-link">Analytics</a>
+          <a href="#" class="side-link">Settings</a>
+        </nav>
+
+        <div class="user-box">
+          <div class="avatar large">RA</div>
+          <div>
+            <strong>Rina Ali</strong>
+            <small>Interior designer</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h2>Good morning, Rina</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="btn secondary">Export</button>
+            <a href="builder.html" class="btn primary">Edit portfolio</a>
+          </div>
+        </header>
+
+        <section class="stats-row">
+          <div class="mini-card">
+            <span>Active projects</span>
+            <strong>12</strong>
+            <small>+3 this month</small>
+          </div>
+          <div class="mini-card">
+            <span>New leads</span>
+            <strong>28</strong>
+            <small>+12% growth</small>
+          </div>
+          <div class="mini-card">
+            <span>Bookable services</span>
+            <strong>7</strong>
+            <small>3 trending</small>
+          </div>
+          <div class="mini-card">
+            <span>Revenue</span>
+            <strong>$4.8k</strong>
+            <small>+18% month</small>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel panel-lg">
+            <div class="panel-head">
+              <h3>Performance</h3>
+              <button class="chip">This month</button>
+            </div>
+
+            <div class="chart-box">
+              <div class="bars">
+                <span style="height: 40%"></span>
+                <span style="height: 52%"></span>
+                <span style="height: 60%"></span>
+                <span style="height: 75%"></span>
+                <span style="height: 82%"></span>
+                <span style="height: 90%"></span>
+                <span style="height: 78%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Recent inquiries</h3>
+              <a href="marketplace.html">View all</a>
+            </div>
+            <ul class="inquiry-list">
+              <li>
+                <div>
+                  <strong>North Villa Project</strong>
+                  <small>Residential concept</small>
+                </div>
+                <span class="badge neutral">New</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Cafe Interior Refresh</strong>
+                  <small>Interior styling</small>
+                </div>
+                <span class="badge success">Booked</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Loft Renovation Proposal</strong>
+                  <small>Space planning</small>
+                </div>
+                <span class="badge warning">Review</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Recent projects</h3>
+              <a href="builder.html">Manage</a>
+            </div>
+
+            <div class="project-list">
+              <article class="project-item">
+                <div class="project-thumb thumb-one"></div>
+                <div>
+                  <strong>Maison Courtyard</strong>
+                  <small>Residential concept</small>
+                </div>
+                <span class="status good">Live</span>
+              </article>
+              <article class="project-item">
+                <div class="project-thumb thumb-two"></div>
+                <div>
+                  <strong>Harbor Loft</strong>
+                  <small>Interior redesign</small>
+                </div>
+                <span class="status neutral">Draft</span>
+              </article>
+              <article class="project-item">
+                <div class="project-thumb thumb-three"></div>
+                <div>
+                  <strong>Studio North</strong>
+                  <small>Commercial concept</small>
+                </div>
+                <span class="status good">Published</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h3>To-do list</h3>
+              <button class="chip">4 tasks</button>
+            </div>
+
+            <ul class="todo-list">
+              <li>
+                <span class="check">✓</span>
+                <span>Update portfolio homepage</span>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <span>Send proposal to Studio North</span>
+              </li>
+              <li>
+                <span class="check">○</span>
+                <span>Publish new project gallery</span>
+              </li>
+              <li>
+                <span class="check">○</span>
+                <span>Review client messages</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
